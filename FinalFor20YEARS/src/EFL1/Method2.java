@@ -184,6 +184,14 @@ public class Method2 {
 			        	output3[i][1]=output1[i][1]/6;
 			        	
 			        }
+			          ArrayList<Integer > l=predict1(a,b,input1,output3);
+			        
+					matches[n].win=l.get(0);
+					predict1(a,b,input1,output3).get(1);
+					teams[matches[n].homeTeamNo].Goaldifference=predict1(a,b,input1,output3).get(1);
+					teams[matches[n].AwayTeamNo].Goaldifference=predict1(a,b,input1,output3).get(2);
+					matches[n].homegoal=l.get(1);
+				    matches[n].awaygoal=l.get(2);
 			
                int c =predict(a,b);
                matches[n].win = c;
